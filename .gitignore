@@ -1,0 +1,7 @@
+.idea/
+vendor/
+.env
+.php-cs-fixer.cache
+composer.lock
+phpunit.xml
+phpstan.neon

@@ -1,0 +1,58 @@
+{
+    "name": "tpetry/php-mysql-explain",
+    "description": "Visual MySQL EXPLAIN plans for PHP",
+    "keywords": [
+        "mysql",
+        "explain"
+    ],
+    "homepage": "https://github.com/tpetry/php-mysql-explain",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tpetry",
+            "email": "github@tpetry.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "nyholm/psr7": "^1.6.0",
+        "psr/http-client": "^1.0",
+        "symfony/polyfill-php81": "^1.22"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.64.0",
+        "mockery/mockery": "^1.6.12",
+        "pestphp/pest": "^1.23.1|^2.0|^3.0",
+        "php-http/mock-client": "^1.6",
+        "phpstan/phpstan": "^1.12.4",
+        "spatie/ray": "^1.41",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tpetry\\PhpMysqlExplain\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tpetry\\PhpMysqlExplain\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse -v",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/php-cs-fixer fix --diff --verbose --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,18 @@
+parameters:
+    level: 9
+    paths:
+        - src
+    ignoreErrors:
+        - message: "#^Parameter \\#1 \\$rows of method Tpetry\\\\PhpMysqlExplain\\\\Metrics\\\\Collector\\:\\:scalar\\(\\) expects array\\<int, non\\-empty\\-array\\<string, float\\|int\\|string\\>\\>, array\\<int, array\\<string, mixed\\>\\> given\\.$#"
+          path: src/Metrics/Collector.php
+        - message: "#^Cannot call method bind_param\\(\\) on mysqli_stmt\\|false\\.$#"
+          path: src/Queries/MysqliQuery.php
+        - message: "#^Cannot call method execute\\(\\) on mysqli_stmt\\|false\\.$#"
+          path: src/Queries/MysqliQuery.php
+        - message: "#^Cannot call method fetch_all\\(\\) on mysqli_result\\|false\\.$#"
+          path: src/Queries/MysqliQuery.php
+        - message: "#^Cannot call method get_result\\(\\) on mysqli_stmt\\|false\\.$#"
+          path: src/Queries/MysqliQuery.php
+        - message: "#^Method Tpetry\\\\PhpMysqlExplain\\\\Queries\\\\PdoQuery\\:\\:execute\\(\\) should return array\\<int, array\\<string, mixed\\>\\> but returns array\\|false\\.$#"
+          path: src/Queries/PdoQuery.php
+          reportUnmatched: false # only triggered with PHP 7.4
