@@ -175,6 +175,6 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [href-version]: https://packagist.org/packages/tpetry/php-mysql-explain
 [icon-license]: https://img.shields.io/github/license/tpetry/php-mysql-explain?color=blue&label=License
 [icon-php]: https://img.shields.io/packagist/php-v/tpetry/php-mysql-explain?color=blue&label=PHP
-[icon-staticanalysis]: https://img.shields.io/github/actions/workflow/status/tpetry/php-mysql-explain/static-analysis.yml?label=Static%20Analysis
-[icon-tests]: https://img.shields.io/github/actions/workflow/status/tpetry/php-mysql-explain/unit-tests.yml?label=Tests
+[icon-staticanalysis]: https://img.shields.io/github/actions/workflow/status/tpetry/php-mysql-explain/phpstan.yml?label=Static%20Analysis
+[icon-tests]: https://img.shields.io/github/actions/workflow/status/tpetry/php-mysql-explain/phpunit.yml?label=Tests
 [icon-version]: https://img.shields.io/packagist/v/tpetry/php-mysql-explain.svg?label=Packagist
